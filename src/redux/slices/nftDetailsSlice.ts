@@ -10,7 +10,7 @@ const initialState: NftDetailsSliceState = {
 
 export const fetchNftDetails = createAsyncThunk<
   NftDetailsType,
-  { contract: string; identifier: string }
+  { contract: string | undefined; identifier: string | undefined }
 >(
   "nftDetails/fetchNftDetails",
   async ({ contract, identifier }, { rejectWithValue }) => {
