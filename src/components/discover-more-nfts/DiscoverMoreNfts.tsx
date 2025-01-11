@@ -31,7 +31,7 @@ function DiscoverMoreNfts() {
             >
               <button className="w-[187px] h-[60px] border-2 border-[#A259FF] rounded-[20px] flex items-center justify-center gap-[12px]">
                 <img src={eyeIcon} alt="" />
-                <span className="text-white font-semibold">See NFT</span>
+                <span className="text-white font-semibold">See All</span>
               </button>
             </Link>
           </div>
@@ -51,7 +51,7 @@ function DiscoverMoreNfts() {
           <Link to="/collection/azukielementals" className="md:hidden">
             <button className="bg-transparent w-full h-[60px] border-[2px] border-[#A259FF] rounded-[20px] flex items-center justify-center gap-[12px]">
               <img src={eyeIcon} alt="" />
-              <span className="text-white font-semibold">See NFT</span>
+              <span className="text-white font-semibold">See All</span>
             </button>
           </Link>
         </div>
