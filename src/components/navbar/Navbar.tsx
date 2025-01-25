@@ -7,18 +7,16 @@ import userIcon from "../../assets/icons/user-icon.png";
 import { Link } from "react-router-dom";
 
 function Navbar() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState<boolean>(false);
 
   return (
     <nav className="lg:h-[100px] h-[54px] w-full text-white px-[30px] md:px-[50px] py-[15px] lg:py-[20px]">
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
-          {/* Logo Section */}
           <Link to="/">
             <img className="w-[183px] lg:w-[243px]" src={logo} alt="" />
           </Link>
 
-          {/* Menu Items */}
           <div className="hidden lg:flex gap-[10px] font-medium items-center font-workSans">
             <span className="hover:text-[#975DE7] cursor-pointer pr-[20px]">
               Marketplace
@@ -30,13 +28,11 @@ function Navbar() {
               Connect a wallet
             </span>
 
-            {/* Sign-Up Button */}
             <button className="bg-[#A259FF] h-[60px] w-[152px] rounded-[20px] py-[19px] px-[30px] flex items-center gap-2">
               <img src={userIcon} alt="" /> Sign Up
             </button>
           </div>
 
-          {/* Mobile Menu */}
           <div onClick={() => setOpen(!open)} className="lg:hidden">
             {!open ? <HiMenuAlt3 size={30} /> : <AiOutlineClose size={30} />}
           </div>
@@ -59,7 +55,6 @@ function Navbar() {
               <span className="text-sm md:text-base">Connect a wallet</span>
             </div>
 
-            {/* Sign-Up Button */}
             <div className="mt-8 md:mt-10">
               <button className="bg-[#A259FF] rounded-2xl py-3 px-7 flex items-center gap-2">
                 <img src={userIcon} alt="" /> Sign Up

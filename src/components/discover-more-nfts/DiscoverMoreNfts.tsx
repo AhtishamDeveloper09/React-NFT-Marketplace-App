@@ -13,7 +13,7 @@ function DiscoverMoreNfts() {
   }
 
   return (
-    <div className="px-[30px] pt-[40px] pb-[60px] md:pb-20 md:px-10 lg:py-20 lg:px-28">
+    <div className="px-[30px] pt-10 pb-[60px] md:pb-20 md:px-10 lg:py-20 lg:px-28">
       <div className="container mx-auto">
         <div className="flex flex-col gap-[40px] lg:gap-[60px] text-white font-workSans">
           <div className="md:flex justify-between">

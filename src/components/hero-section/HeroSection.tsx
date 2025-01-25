@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import roketLaunch from "../../assets/svg/rocket-launch.svg";
 import noImage from "../../assets/images/no-image.png";
-import { useAppSelector } from "../../hooks/useStore";
+import { useAppSelector } from "../../hooks/reduxHooks";
 
 function HeroSection() {
   const collections = useAppSelector(

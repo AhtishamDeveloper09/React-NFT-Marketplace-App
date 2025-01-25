@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { useAppDispatch, useAppSelector } from "../../hooks/useStore";
+import { useAppDispatch, useAppSelector } from "../../hooks/reduxHooks";
 import { useEffect } from "react";
 import { fetchNftDetails } from "../../redux/slices/nftDetailsSlice";
 

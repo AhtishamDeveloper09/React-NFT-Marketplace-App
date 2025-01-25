@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useAppDispatch, useAppSelector } from "../../hooks/useStore";
+import { useAppDispatch, useAppSelector } from "../../hooks/reduxHooks";
 import { fetchCollections } from "../../redux/slices/collectionsSlice";
 
 export function useTrendingCollections() {
