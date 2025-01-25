@@ -1,40 +1,8 @@
 import shroomi from "../../assets/svg/shroomie.svg";
 import eyeIcon from "../../assets/svg/eye-icon.svg";
-import { useState, useEffect } from "react";
 import AuctionTimer from "../auction-timer/AuctionTimer";
 
 const MagicMushroom = () => {
-  const [timeLeft, setTimeLeft] = useState({
-    hours: 59,
-    minutes: 59,
-    seconds: 59,
-  });
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft((prevTime) => {
-        let { hours, minutes, seconds } = prevTime;
-
-        if (seconds > 0) {
-          seconds -= 1;
-        } else if (minutes > 0) {
-          seconds = 59;
-          minutes -= 1;
-        } else if (hours > 0) {
-          minutes = 59;
-          seconds = 59;
-          hours -= 1;
-        } else {
-          clearInterval(timer);
-        }
-
-        return { hours, minutes, seconds };
-      });
-    }, 1000);
-
-    return () => clearInterval(timer);
-  }, [timeLeft]);
-
   return (
     <div className="relative h-[590px] md:h-[630px] lg:h-[640px] bg-cover bg-center bg-no-repeat bg-mashroom-mobile md:bg-mashroom-desktop">
       <div className="absolute inset-0 bg-gradient-to-t from-[#975DE7] to-transparent">

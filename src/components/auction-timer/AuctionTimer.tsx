@@ -6,7 +6,11 @@ function AuctionTimer({ placeBidBtn }: { placeBidBtn?: boolean }) {
     minutes: 59,
     seconds: 59,
   };
-  const [timeLeft, setTimeLeft] = useState(initialTime);
+  const [timeLeft, setTimeLeft] = useState<{
+    hours: number;
+    minutes: number;
+    seconds: number;
+  }>(initialTime);
 
   useEffect(() => {
     const timer = setInterval(() => {

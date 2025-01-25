@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export function useNFTCards() {
-  const [imageLoading, setImageLoading] = useState(false);
+  const [imageLoading, setImageLoading] = useState<boolean>(false);
   const handleImageLoading = () => {
     setImageLoading(true);
   };
