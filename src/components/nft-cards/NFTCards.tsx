@@ -1,5 +1,5 @@
-import "react-lazy-load-image-component/src/effects/blur.css";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+// import "react-lazy-load-image-component/src/effects/blur.css";
+// import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useNFTCards } from "./useNFTCards";
 import loadingGif from "../../assets/images/loading.gif";
 import noImage from "../../assets/images/no-image.png";
@@ -7,19 +7,20 @@ import { Link } from "react-router-dom";
 import { NftType } from "../../types/types";
 
 function NFTCards({ item, bgColor }: { item: NftType; bgColor: string }) {
-  const { imageLoading, handleImageLoading } = useNFTCards();
+  // const { imageLoading, handleImageLoading } = useNFTCards();
 
   return (
     <Link
       to={`/nft/${item?.collection}/${item?.contract}/${item?.identifier}`}
       className="flex flex-col items-center md:max-w-[330px] justify-center h-fit"
     >
-      {!imageLoading && (
+      {/* {!imageLoading && (
         <div className="h-[238px] md:h-[295px] w-[315px] md:w-[330px] bg-black rounded-t-[20px] flex items-center justify-center">
           <img src={loadingGif} alt="" />
-        </div>
-      )}
-      <LazyLoadImage
+          </div>
+          )} */}
+
+      {/* <LazyLoadImage
         className={`h-[238px] md:h-[295px] w-full min-w-[315px] md:min-w-[330px] rounded-t-[20px] object-cover ${
           imageLoading ? "" : "hidden"
         }`}
@@ -27,6 +28,12 @@ function NFTCards({ item, bgColor }: { item: NftType; bgColor: string }) {
         alt=""
         effect="blur"
         onLoad={() => handleImageLoading()}
+        /> */}
+
+      <img
+        className="h-[238px] md:h-[295px] w-full min-w-[315px] md:min-w-[330px] rounded-t-[20px] object-cover"
+        src={item?.image_url || noImage}
+        alt=""
       />
 
       <div
