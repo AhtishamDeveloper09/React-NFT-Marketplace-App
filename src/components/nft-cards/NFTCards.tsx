@@ -1,7 +1,7 @@
 // import "react-lazy-load-image-component/src/effects/blur.css";
 // import { LazyLoadImage } from "react-lazy-load-image-component";
-import { useNFTCards } from "./useNFTCards";
-import loadingGif from "../../assets/images/loading.gif";
+// import { useNFTCards } from "./useNFTCards";
+// import loadingGif from "../../assets/images/loading.gif";
 import noImage from "../../assets/images/no-image.png";
 import { Link } from "react-router-dom";
 import { NftType } from "../../types/types";
