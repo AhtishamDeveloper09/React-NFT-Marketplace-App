@@ -1,7 +1,7 @@
 import eyeIcon from "../../assets/svg/eye-icon.svg";
 import NFTCards from "../nft-cards/NFTCards";
 import { useCollection } from "../../pages/collection/useCollection";
-import Loader from "../loader/loader";
+import Loader from "../loader/Loader";
 import { Link } from "react-router-dom";
 import { NftType } from "../../types/types";
 
@@ -29,7 +29,7 @@ function DiscoverMoreNfts() {
               to="/collection/azukielementals"
               className="hidden md:block content-end"
             >
-              <button className="w-[187px] h-[60px] border-2 border-[#A259FF] rounded-[20px] flex items-center justify-center gap-[12px]">
+              <button className="w-[187px] h-[60px] border-2 border-purpleColor rounded-[20px] flex items-center justify-center gap-[12px]">
                 <img src={eyeIcon} alt="" />
                 <span className="text-white font-semibold">See All</span>
               </button>
@@ -49,7 +49,7 @@ function DiscoverMoreNfts() {
           )}
 
           <Link to="/collection/azukielementals" className="md:hidden">
-            <button className="bg-transparent w-full h-[60px] border-[2px] border-[#A259FF] rounded-[20px] flex items-center justify-center gap-[12px]">
+            <button className="bg-transparent w-full h-[60px] border-[2px] border-purpleColor rounded-[20px] flex items-center justify-center gap-[12px]">
               <img src={eyeIcon} alt="" />
               <span className="text-white font-semibold">See All</span>
             </button>

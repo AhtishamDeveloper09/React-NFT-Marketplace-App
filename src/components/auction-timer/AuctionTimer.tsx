@@ -58,7 +58,7 @@ function AuctionTimer({ placeBidBtn }: { placeBidBtn?: boolean }) {
         </div>
       </div>
       {placeBidBtn && (
-        <button className="font-semibold w-full font-workSans h-[60px] flex items-center justify-center bg-[#A259FF] rounded-[20px]">
+        <button className="font-semibold w-full font-workSans h-[60px] flex items-center justify-center bg-purpleColor rounded-[20px]">
           Place Bid
         </button>
       )}

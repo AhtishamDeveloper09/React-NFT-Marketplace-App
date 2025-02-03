@@ -2,7 +2,7 @@ import noImage from "../../assets/images/no-image.png";
 import AuctionTimer from "../../components/auction-timer/AuctionTimer";
 import { useNftDetails } from "./useNftDetails";
 import { CiGlobe } from "react-icons/ci";
-import Loader from "../../components/loader/loader";
+import Loader from "../../components/loader/Loader";
 
 function NftDetails() {
   const { nft, loading, error, collection } = useNftDetails();
@@ -28,7 +28,7 @@ function NftDetails() {
                   <h1 className="text-[28px] md:text-[38px] lg:text-[51px] font-semibold">
                     {nft?.name}
                   </h1>
-                  <span className="text-[#858584] font-medium text-[16px] lg:text-[22px]">
+                  <span className="text-lightTextColor font-medium text-[16px] lg:text-[22px]">
                     Minted on {nft?.updated_at?.split("T")[0]}
                   </span>
                 </div>
@@ -38,7 +38,7 @@ function NftDetails() {
                 </div>
 
                 <div className="flex flex-col gap-[10px]">
-                  <span className="font-spaceMono font-medium text-[16px] text-[#858584] lg:text-[22px]">
+                  <span className="font-spaceMono font-medium text-[16px] text-lightTextColor lg:text-[22px]">
                     Created By
                   </span>
                   <div className="flex items-center gap-[12px]">
@@ -54,7 +54,7 @@ function NftDetails() {
                 </div>
 
                 <div className="flex flex-col gap-[10px]">
-                  <span className="font-spaceMono font-medium text-[16px] text-[#858584] lg:text-[22px]">
+                  <span className="font-spaceMono font-medium text-[16px] text-lightTextColor lg:text-[22px]">
                     Description
                   </span>
                   <div className="flex items-center gap-[12px]">
@@ -65,7 +65,7 @@ function NftDetails() {
                 </div>
 
                 <div className="flex flex-col gap-[10px]">
-                  <span className="font-spaceMono font-medium text-[16px] text-[#858584] lg:text-[22px]">
+                  <span className="font-spaceMono font-medium text-[16px] text-lightTextColor lg:text-[22px]">
                     Details
                   </span>
                   <div className="flex items-center gap-[10px]">
@@ -73,7 +73,7 @@ function NftDetails() {
                     <a
                       href={nft?.opensea_url}
                       target="_blank"
-                      className="text-[16px] lg:text-[22px] hover:text-[#A259FF]"
+                      className="text-[16px] lg:text-[22px] hover:text-purpleColor"
                     >
                       View on OpenSea
                     </a>
@@ -87,21 +87,21 @@ function NftDetails() {
                 </div>
 
                 <div className="flex flex-col gap-[10px]">
-                  <span className="font-spaceMono font-mediuem text-[16px] text-[#858584] lg:text-[22px]">
+                  <span className="font-spaceMono font-mediuem text-[16px] text-lightTextColor lg:text-[22px]">
                     Tags
                   </span>
 
                   <div className="flex flex-col lg:flex-row gap-[20px]">
-                    <div className="py-[12px] px-[30px] bg-[#3B3B3B] uppercase font-semibold w-fit rounded-[20px]">
+                    <div className="py-[12px] px-[30px] bg-secondaryBgColor uppercase font-semibold w-fit rounded-[20px]">
                       Animation
                     </div>
-                    <div className="py-[12px] px-[30px] bg-[#3B3B3B] uppercase font-semibold w-fit rounded-[20px]">
+                    <div className="py-[12px] px-[30px] bg-secondaryBgColor uppercase font-semibold w-fit rounded-[20px]">
                       NFT
                     </div>
-                    <div className="py-[12px] px-[30px] bg-[#3B3B3B] uppercase font-semibold w-fit rounded-[20px]">
+                    <div className="py-[12px] px-[30px] bg-secondaryBgColor uppercase font-semibold w-fit rounded-[20px]">
                       Illustration
                     </div>
-                    <div className="py-[12px] px-[30px] bg-[#3B3B3B] uppercase font-semibold w-fit rounded-[20px]">
+                    <div className="py-[12px] px-[30px] bg-secondaryBgColor uppercase font-semibold w-fit rounded-[20px]">
                       Art
                     </div>
                   </div>

@@ -1,4 +1,4 @@
-import { categoryCardsData } from "../../constants/categoryCardsData";
+import { CategoryCardsData } from "../../constants/categoryCardsData";
 
 function BrowseCategories() {
   return (
@@ -9,7 +9,7 @@ function BrowseCategories() {
             Browse Categories
           </h1>
           <div className="grid justify-center grid-cols-2 gap-5 md:gap-[30px] md:grid-cols-4">
-            {categoryCardsData.map((card, index) => (
+            {CategoryCardsData.map((card, index) => (
               <div
                 key={index}
                 className="w-full max-w-[147px] h-[209px] md:max-w-[150px] lg:max-w-[240px] lg:h-[316px] rounded-t-[20px]"
@@ -21,7 +21,7 @@ function BrowseCategories() {
                     className="h-full w-full object-cover rounded-t-[20px]"
                   />
                 </div>
-                <div className="h-[67px] w-full md:h-[76px] bg-[#3B3B3B] rounded-b-[20px] ">
+                <div className="h-[67px] w-full md:h-[76px] bg-secondaryBgColor rounded-b-[20px] ">
                   <p className="w-full font-semibold sm:text-[16px] text-sm px-[10px] py-5 lg:pb-[30px] md:px-5 lg:text-[22px] text-white">
                     {card?.title}
                   </p>

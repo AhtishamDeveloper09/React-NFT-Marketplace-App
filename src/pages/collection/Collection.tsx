@@ -1,7 +1,7 @@
 import { IoSearch } from "react-icons/io5";
 import NFTCards from "../../components/nft-cards/NFTCards";
 import { useCollection } from "./useCollection";
-import Loader from "../../components/loader/loader";
+import Loader from "../../components/loader/Loader";
 import { NftType } from "../../types/types";
 
 function Collection() {
@@ -24,7 +24,7 @@ function Collection() {
                 Browse through more than 50k NFTs on the NFT Marketplace.
               </p>
             </div>
-            <div className="flex justify-between h-[60px] border border-[#3B3B3B] rounded-[20px] w-full px-[20px]">
+            <div className="flex justify-between h-[60px] border border-secondaryBgColor rounded-[20px] w-full px-[20px]">
               <input
                 type="search"
                 className="block placeholder:text-[16px] placeholder:font-workSans h-full w-full text-[16px] bg-transparent focus:outline-none"
@@ -39,15 +39,15 @@ function Collection() {
         </div>
       </div>
 
-      <hr className="border border-[#3B3B3B] w-full" />
+      <hr className="border border-secondaryBgColor w-full" />
 
       <div className="pt-[10px] px-[30px] md:px-[60px] lg:px-28 text-white">
         <div className="container mx-auto">
-          <div className="flex items-center justify-center py-4 gap-4 border-b-[2px] border-[#858584]">
+          <div className="flex items-center justify-center py-4 gap-4 border-b-[2px] border-lightTextColor">
             <h3 className="font-workSans font-semibold lg:text-[22px] text-base">
               NFTs
             </h3>
-            <span className="px-[10px] py-[5px] h-[32px] text-[16px] font-spaceMono hidden md:block bg-[#858584] rounded-[20px]">
+            <span className="px-[10px] py-[5px] h-[32px] text-[16px] font-spaceMono hidden md:block border-lightTextColor rounded-[20px]">
               302
             </span>
           </div>
@@ -55,7 +55,7 @@ function Collection() {
       </div>
 
       {!error ? (
-        <div className="bg-[#3B3B3B] px-[30px] py-10 md:px-[60px] md:pt-[60px] md:pb-20 lg:px-28">
+        <div className="bg-secondaryBgColor px-[30px] py-10 md:px-[60px] md:pt-[60px] md:pb-20 lg:px-28">
           <div className="container mx-auto">
             <div className="grid grid-cols-1 gap-[30px] md:grid-cols-2 xl:grid-cols-3 justify-items-center">
               {nfts?.map((item: NftType, index: number) => (
@@ -70,7 +70,7 @@ function Collection() {
         </div>
       )}
 
-      <hr className="border border-[#2B2B2B]" />
+      <hr className="border border-primaryBgColor" />
     </div>
   );
 }

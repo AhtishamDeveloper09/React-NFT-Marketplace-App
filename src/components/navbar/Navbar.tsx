@@ -1,4 +1,3 @@
-// import React from "react";
 import { useState } from "react";
 import logo from "../../assets/icons/logo.png";
 import { HiMenuAlt3 } from "react-icons/hi";
@@ -18,17 +17,17 @@ function Navbar() {
           </Link>
 
           <div className="hidden lg:flex gap-[10px] font-medium items-center font-workSans">
-            <span className="hover:text-[#975DE7] cursor-pointer pr-[20px]">
+            <span className="hover:text-purpleColor cursor-pointer pr-[20px]">
               Marketplace
             </span>
-            <span className="hover:text-[#975DE7] cursor-pointer pr-[20px]">
+            <span className="hover:text-purpleColor cursor-pointer pr-[20px]">
               Rankings
             </span>
-            <span className="hover:text-[#975DE7] cursor-pointer pr-[20px]">
+            <span className="hover:text-purpleColor cursor-pointer pr-[20px]">
               Connect a wallet
             </span>
 
-            <button className="bg-[#A259FF] h-[60px] w-[152px] rounded-[20px] py-[19px] px-[30px] flex items-center gap-2">
+            <button className="bg-purpleColor h-[60px] w-[152px] rounded-[20px] py-[19px] px-[30px] flex items-center gap-2">
               <img src={userIcon} alt="" /> Sign Up
             </button>
           </div>
@@ -41,8 +40,8 @@ function Navbar() {
         <div
           className={
             open
-              ? "fixed lg:hidden top-0 left-0 bg-[#101010] w-[70%] md:w-[45%] h-screen duration-1000 z-20"
-              : "fixed lg:hidden top-0 left-[-100%] h-screen bg-[#101010] w-[70%] duration-1000 z-20"
+              ? "fixed lg:hidden top-0 left-0 bg-darkBgColor w-[70%] md:w-[45%] h-screen duration-1000 z-20"
+              : "fixed lg:hidden top-0 left-[-100%] h-screen bg-darkBgColor w-[70%] duration-1000 z-20"
           }
         >
           <div className="px-4 py-2 font-workSans font-medium">
@@ -56,7 +55,7 @@ function Navbar() {
             </div>
 
             <div className="mt-8 md:mt-10">
-              <button className="bg-[#A259FF] rounded-2xl py-3 px-7 flex items-center gap-2">
+              <button className="bg-purpleColor rounded-2xl py-3 px-7 flex items-center gap-2">
                 <img src={userIcon} alt="" /> Sign Up
               </button>
             </div>

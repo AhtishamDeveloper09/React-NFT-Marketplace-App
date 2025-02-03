@@ -24,7 +24,7 @@ function HeroSection() {
             </div>
             <Link
               to={`/collection/${collections[1].collection}`}
-              className="max-w-[315px] max-h-[315px] w-full h-full rounded-[20px] bg-[#3B3B3B]"
+              className="max-w-[315px] max-h-[315px] w-full h-full rounded-[20px] bg-secondaryBgColor"
             >
               <img
                 src={collections[1].image_url || noImage}
@@ -47,7 +47,7 @@ function HeroSection() {
               </div>
             </Link>
             <div className="py-3 w-full mx-auto text-center">
-              <button className="flex w-full max-w-[315px] justify-center items-center text-white font-semibold px-12 gap-3 md:max-w-[224px] h-[60px] bg-[#A259FF] rounded-[20px]">
+              <button className="flex w-full max-w-[315px] justify-center items-center text-white font-semibold px-12 gap-3 md:max-w-[224px] h-[60px] bg-purpleColor rounded-[20px]">
                 <img src={roketLaunch} alt="" /> Get Started
               </button>
             </div>
@@ -78,7 +78,7 @@ function HeroSection() {
                   and sell art from more than 20k NFT artists.
                 </p>
               </div>
-              <button className="flex w-full max-w-[315px] justify-center items-center text-white font-semibold px-12 gap-3 md:max-w-[224px] h-[60px] bg-[#A259FF] rounded-[20px]">
+              <button className="flex w-full max-w-[315px] justify-center items-center text-white font-semibold px-12 gap-3 md:max-w-[224px] h-[60px] bg-purpleColor rounded-[20px]">
                 <img src={roketLaunch} alt="" /> Get Started
               </button>
               <div className="flex gap-[30px] font-spaceMono text-white">
@@ -111,7 +111,7 @@ function HeroSection() {
             <div className="flex justify-center w-1/2">
               <Link
                 to={`/collection/${collections[0].collection}`}
-                className="w-full h-full rounded-[20px] bg-[#3B3B3B] max-w-[330px] max-h-[330px] lg:max-w-[510px] lg:max-h-[510px]"
+                className="w-full h-full rounded-[20px] bg-secondaryBgColor max-w-[330px] max-h-[330px] lg:max-w-[510px] lg:max-h-[510px]"
               >
                 <img
                   src={collections[0].image_url || noImage}

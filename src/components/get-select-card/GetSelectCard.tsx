@@ -2,7 +2,7 @@ import { GetSelectCardProps } from "../../types/types";
 
 function GetSelectCard({ src, alt, title, description }: GetSelectCardProps) {
   return (
-    <div className="bg-[#3B3B3B] flex p-[20px] w-full items-center md:flex-col gap-[20px] text-center rounded-2xl">
+    <div className="bg-secondaryBgColor flex p-[20px] w-full items-center md:flex-col gap-[20px] text-center rounded-2xl">
       <img
         src={src}
         alt={alt}

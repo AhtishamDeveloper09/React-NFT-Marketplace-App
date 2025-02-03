@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useTrendingCollections } from "./useTrendingCollections";
-import Loader from "../loader/loader";
+import Loader from "../loader/Loader";
 import noImage from "../../assets/images/no-image.png";
 import { CollectionType } from "../../types/types";
 
