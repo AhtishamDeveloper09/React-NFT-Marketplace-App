@@ -32,7 +32,7 @@ function BrowseCategories() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
 export default BrowseCategories;
