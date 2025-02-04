@@ -1,4 +1,4 @@
-import { CategoryCardsData } from "../../constants/categoryCardsData";
+import { CATEGORY_CARDS_DATA } from "../../constants/categoryCardsData";
 
 function BrowseCategories() {
   return (
@@ -9,7 +9,7 @@ function BrowseCategories() {
             Browse Categories
           </h1>
           <div className="grid justify-center grid-cols-2 gap-5 md:gap-[30px] md:grid-cols-4">
-            {CategoryCardsData.map((card, index) => (
+            {CATEGORY_CARDS_DATA.map((card, index) => (
               <div
                 key={index}
                 className="w-full max-w-[147px] h-[209px] md:max-w-[150px] lg:max-w-[240px] lg:h-[316px] rounded-t-[20px]"
